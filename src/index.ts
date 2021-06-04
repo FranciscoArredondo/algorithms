@@ -1,3 +1,4 @@
+import BubbleSort from "./BubbleSort";
 import InsertionSort from "./InsertionSort";
 import SelectionSort from "./SelectionSort";
 
@@ -15,3 +16,11 @@ const insertionSort = new InsertionSort();
 console.log(`Original: ${arr2.toString()}`);
 selectionSort.sort(arr2);
 console.log(`Sorted:   ${arr2.toString()}`);
+
+console.log(`\n/******* Bubble Sort *******/`);
+
+const arr3 = [2, 9, 7, 0, 3, 6, 1, 8, 7, 1, 2];
+const bubbleSort = new BubbleSort();
+console.log(`Original: ${arr3.toString()}`);
+bubbleSort.sort(arr3);
+console.log(`Sorted:   ${arr3.toString()}`);
