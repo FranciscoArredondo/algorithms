@@ -1,4 +1,6 @@
-export default class InsertionSort<T> {
+import SortingAlgorithm from "./SortingAlgorithm";
+
+export default class InsertionSort<T> extends SortingAlgorithm<T> {
   sort(arr: Array<T>): void {
     for (let i = 1; i < arr.length; i++) {
       let next = i;
@@ -9,11 +11,5 @@ export default class InsertionSort<T> {
         break;
       }
     }
-  }
-
-  swap(arr: Array<T>, i: number, j: number): void {
-    const tmp = arr[i];
-    arr[i] = arr[j];
-    arr[j] = tmp;
   }
 }
