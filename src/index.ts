@@ -18,14 +18,6 @@ console.log(`Original: ${arr2.toString()}`);
 selectionSort.sort(arr2);
 console.log(`Sorted:   ${arr2.toString()}`);
 
-console.log(`\n/******* Bubble Sort *******/`);
-
-const arr3 = [2, 9, 7, 0, 3, 6, 1, 8, 7, 1, 2];
-const bubbleSort = new BubbleSort();
-console.log(`Original: ${arr3.toString()}`);
-bubbleSort.sort(arr3);
-console.log(`Sorted:   ${arr3.toString()}`);
-
 console.log(`\n/******* Binary Search *******/`);
 const arr4 = [
   1, 4, 5, 6, 8, 8, 10, 13, 13, 18, 18, 18, 20, 20, 21, 22, 23, 23, 26, 26, 26,

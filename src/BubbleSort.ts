@@ -1,16 +1,18 @@
-import SortingAlgorithm from "./SortingAlgorithm";
+import { swap } from "./Utils";
 
-export default class BubbleSort<T> extends SortingAlgorithm<T> {
-  sort(arr: any[]): void {
+export default class BubbleSort<T> {
+  static sort(arr: any[]): Array<any> {
+    const copy = arr.slice();
     let hasSwapped: boolean;
     do {
       hasSwapped = false;
-      for (let i = 0; i + 1 < arr.length; i++) {
-        if (arr[i] > arr[i + 1]) {
-          this.swap(arr, i, i + 1);
+      for (let i = 0; i + 1 < copy.length; i++) {
+        if (copy[i] > copy[i + 1]) {
+          swap(copy, i, i + 1);
           hasSwapped = true;
         }
       }
     } while (hasSwapped);
+    return copy;
   }
 }
